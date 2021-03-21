@@ -19,10 +19,10 @@
         <img src="img/Captura4.PNG" width="60px" heigth="60" alt="logo" class="logo">
         <nav>
           <ul>
-            <li><button class="button outline">About</button></li>
-            <li><button class="button outline">Pricing</button></li>
-            <li><button class="button outline">Blog</button></li>
-            <li><button class="button outline">Contact</button></li>
+            <li><a class="button outline" href="mainPage.php">About</a></li>
+            <li><a class="button outline">Pricing</a></li>
+            <li><a class="button outline">Blog</a></li>
+            <li><a class="button outline" href="contact.php">Contact</a></li>
           </ul>
         </nav>
       </div>

@@ -1,5 +1,4 @@
-
-  <?php include_once 'includes/templates/headerMP.php'?>
+ <?php include_once 'includes/templates/headerMP.php'?>
     <video muted autoplay loop poster="video" id="myVideo">
       <source src="video/casita.mp4" type="video/mp4">
     </video>

@@ -250,15 +250,13 @@ justify-content:flex-end;
 align-items: center;
 background:transparent;
 position: relative;
-  }
-  @media(max-width:768px){
+}
+
+@media(max-width:768px){
     .container-contact{
       padding-top: 30px;
       right:8rem;
       flex-direction: column;
-    }
-    #mymap{
-      display:wrap;
     }
   }
 .wrap-contact{
@@ -372,7 +370,7 @@ textarea.input{
   overflow: hidden;
 }
 
-button{
+input{
   appearance: auto;
   writing-mode: inherit;
   -webkit-writing-mode: horizontal-tb !important;
@@ -449,10 +447,23 @@ button{
 }
 
 #mymap{
-  top: -9rem;
+  /*top: -9rem;*/
   width:50%;
   height:580px;
   box-shadow: 5px 5px 5px #888;
 }
 
+@media (max-width: 768px){
+  #mymap{
+    /*top: 4rem;*/
+    width:50%;
+
+  }
+}
+
+.new-section{
+    height:100%;
+    display: block;
+    margin-bottom: 15.2rem;
+}
 
