@@ -22,6 +22,7 @@ body {
 @media(max-width:768px){
     body{
        overflow-x:hidden;
+       
     }
 }
 
@@ -40,12 +41,12 @@ header::after {
 }
 
 header .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 @media (min-width:768px) {
-    .container{
-      width: 100%;
+    header .container{
+      width: 90%;
     }
   }
 
@@ -169,7 +170,7 @@ height: 100%;
     margin: 3.5rem;
     font-family:var(--fontCormorant);
 }
-span{
+span .spanMP{
     color: var(--mycolorspaceblue);
     text-align: center;
     font-family:var(--fontCormorant);
@@ -251,6 +252,24 @@ wh {
 g{
     color: var(--mycolorspaceblue);
 }
+@media (max-width:768px){
+    .information{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1rem;
+    }
+    .information2 img{
+        position: relative;
+        right: 3rem;
+        top: 3.4rem;
+    } 
+    .information3 img{
+        position: relative;
+        left: 10rem;
+    }
+  
+}
 
 .informationVideo{
     position: relative;
@@ -260,20 +279,32 @@ g{
 
 .contentVideo{
     background: black;
-
     padding: 90px;
     text-align: center;
+
 }
 
 .videoBorder{
-    position: relative;
-    left: 19%;
-    height: 480px;
-    width: 854px;
-    border: 5px solid var(--mycolorspaceblue);
+    position: relative;    
     overflow: hidden;
 }
 
+.videoBorder video {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--mycolorspaceblue);
+}
+@media (max-width:768px){
+    .videoBorder{
+        left: 50%;
+        display: block;
+        resize: vertical;
+        margin-top: 4rem;
+        width: 100%;
+        max-height: 100%;
+        transform: translate(-50%, -5%);
+    }
+}
 .contentBlog{
     background: var(--mycolorspaceblue);
     padding: 3rem 0;
@@ -314,6 +345,7 @@ g{
 }
 
 .informationBlog bi{
+    
     font-family: var(--fontMontserrat);
     font-size: 200%;
     font-weight:200;
@@ -334,6 +366,19 @@ bt {
 
 .chatImage{
     padding: 2% 35%;
+}
+@media(max-width:768px){
+    .contentBlog{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1px;
+    }
+    .informationBlog{
+        position:relative;
+
+        top:3rem;
+    }
 }
 
 /* -----------FOOTER--------------*/
